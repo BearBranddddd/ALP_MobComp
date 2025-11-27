@@ -68,7 +68,7 @@ struct SignUpView: View {
 
                             Text("Sign In with Google")
                                 .font(.system(size: 14, weight: .medium))
-
+                                .foregroundStyle(.black)
                             Spacer()
                         }
                         .padding()
@@ -89,7 +89,7 @@ struct SignUpView: View {
 
                             Text("Sign In with Apple")
                                 .font(.system(size: 14, weight: .medium))
-
+                                .foregroundStyle(.black)
                             Spacer()
                         }
                         .padding()

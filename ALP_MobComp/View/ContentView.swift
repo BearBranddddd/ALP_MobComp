@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  ALP_MobComp
 //
-//  Created by Stefanie Agahari on 25/11/25.
+//  Created by Bernardo Frederick Kowe on 26/11/25.
 //
 
 import SwiftUI

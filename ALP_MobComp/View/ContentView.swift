@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .dashboard
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            switch selectedTab {
+            case .dashboard:
+                DashboardView()
+            case .project:
+                ProjectView()
+            case .report:
+                ReportView()
+            case .settings:
+                SettingsView()
+            }
+            Spacer()
+            NavigationBar(selectedTab: $selectedTab)
+                .frame(maxWidth: .infinity)
         }
-        .padding()
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
-#Preview {
-    ContentView()
+enum Tab {
+    case dashboard
+    case project
+    case report
+    case settings
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

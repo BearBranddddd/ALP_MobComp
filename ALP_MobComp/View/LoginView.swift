@@ -87,6 +87,7 @@ struct LoginView: View {
                         HStack {
                             Image(systemName: "apple.logo")
                                 .font(.system(size: 20))
+                                .foregroundStyle(.black)
                             
                             Text("Sign In with Apple")
                                 .font(.system(size: 14, weight: .medium))
